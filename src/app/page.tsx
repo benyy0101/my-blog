@@ -4,8 +4,11 @@ import { Tooltip } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { HomeIcon } from "@heroicons/react/24/outline";
-import Navbar from "./component/navbar";
-import Intro from "./component/intro";
+import Intro from "./component/Intro";
+import Navbar from "./component/Navbar";
+import FlutterIcon from "./images/flutterIcon";
+import IconColor from "./model/colors";
+import StackTooltip from './component/StackTooltip';
 
 function Home() {
   const [scroll, setScroll] = useState<boolean>(false);
@@ -27,6 +30,7 @@ function Home() {
   return (
     <div className="relative">
       {scroll && <Navbar />}
+      {/* 첫페이지 */}
       <div className="flex h-[100vh]">
         <div className="h-full flex-grow-[1] flex flex-col justify-center items-end w-full">
           <Intro />
@@ -45,6 +49,12 @@ function Home() {
         <div className="h-full flex-grow-[1] flex justify-start items-center w-full">
           temptemptemp
         </div>
+      </div>
+
+      {/* 두번째 페이지 */}
+
+      <div className="flex h-[100vh] justify-center items-center">
+        <StackTooltip/>
       </div>
     </div>
   );

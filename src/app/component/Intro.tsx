@@ -11,7 +11,7 @@ function Intro() {
           sequence={[
             "배움과 적용으로", // Types 'One'
             1000, // Waits 1s
-            "늘 성실한 자세로", // Deletes 'One' and types 'Two'
+            "꾸준한 몰입력으로", // Deletes 'One' and types 'Two'
             1000, // Waits 2s
             () => {
               console.log("Sequence completed");
