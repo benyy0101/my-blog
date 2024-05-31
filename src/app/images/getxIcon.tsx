@@ -4,7 +4,7 @@ import { IconProps } from "./../model/commons";
 function GetxIcon({ fill }: IconProps) {
   return (
     <svg
-      fill={fill}
+      className={fill}
       role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"

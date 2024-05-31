@@ -17,8 +17,8 @@ enum IconColor {
 
     Flutter = '#02569B',
     GetX = '#8A2BE2',
-
     TensorFlow = '#FF6F00',
+    
     Git='#F05032',
     Github = '#181717',
     Figma='#F24E1E',

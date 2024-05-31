@@ -12,7 +12,7 @@ function Navbar() {
   });
   return (
     <motion.div
-      className="fixed w-full h-16 bg-green-500"
+      className="fixed w-full h-16 bg-green-500 z-10"
       initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{

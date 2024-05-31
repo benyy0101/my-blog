@@ -2,62 +2,69 @@ import { Tooltip } from "@chakra-ui/react";
 import React from "react";
 import FlutterIcon from "../images/flutterIcon";
 import JavaScriptIcon from "../images/javasriptIcon";
+import IconColor from "../model/colors";
+import ReactIcon from "../images/reactIcon";
+import TypescriptIcon from "../images/typescriptIcon";
+import ReactqueryIcon from "../images/reactqueryIcon";
+import NextdotjsIcon from "../images/nextdotjsIcon";
+import ViteIcon from "../images/viteIcon";
+import TailwindIcon from "../images/tailwindIcon";
+import PrismaIcon from "../images/prismaIcon";
+import ReduxIcon from "../images/reduxIcon";
 
-function StackTooltip() {
+function FrontStack() {
   return (
-    <div className="flex gap-6">
-      <Tooltip label="HI">
+    <div className="flex gap-4">
+      <Tooltip label="Javascript">
         <div className="w-16 h-16 shadow-lg bg-slate-50 flex justify-center items-center rounded-lg">
-          <FlutterIcon fill={`fill-flutter w-6 h-6`} />
+          <JavaScriptIcon fill={`fill-[#F7DF1E] w-6 h-6`} />
         </div>
       </Tooltip>
-      <Tooltip label="HI">
+
+      <Tooltip label="Typescript">
         <div className="w-16 h-16 shadow-lg bg-slate-50 flex justify-center items-center rounded-lg">
-          <JavaScriptIcon fill={`fill-flutter w-6 h-6`} />
+          <TypescriptIcon fill={`fill-[#3178C6] w-6 h-6`} />
         </div>
       </Tooltip>
-      <Tooltip label="HI">
+
+      <Tooltip label="React">
         <div className="w-16 h-16 shadow-lg bg-slate-50 flex justify-center items-center rounded-lg">
-          <FlutterIcon fill={`fill-flutter w-6 h-6`} />
+          <ReactIcon fill={`fill-[#61DAFB] w-6 h-6`} />
         </div>
       </Tooltip>
-      <Tooltip label="HI">
+      <Tooltip label="Redux">
         <div className="w-16 h-16 shadow-lg bg-slate-50 flex justify-center items-center rounded-lg">
-          <FlutterIcon fill={`fill-flutter w-6 h-6`} />
+          <ReduxIcon fill={`fill-[#764ABC] w-6 h-6`} />
         </div>
       </Tooltip>
-      <Tooltip label="HI">
+
+      <Tooltip label="React Query">
         <div className="w-16 h-16 shadow-lg bg-slate-50 flex justify-center items-center rounded-lg">
-          <FlutterIcon fill={`fill-flutter w-6 h-6`} />
+          <ReactqueryIcon fill={`fill-[#FF4154] w-6 h-6`} />
         </div>
       </Tooltip>
-      <Tooltip label="HI">
+      <Tooltip label="Next.js">
         <div className="w-16 h-16 shadow-lg bg-slate-50 flex justify-center items-center rounded-lg">
-          <FlutterIcon fill={`fill-flutter w-6 h-6`} />
+          <NextdotjsIcon fill={`fill-[#2D3748] w-6 h-6`} />
         </div>
       </Tooltip>
-      <Tooltip label="HI">
+      <Tooltip label="Prisma">
         <div className="w-16 h-16 shadow-lg bg-slate-50 flex justify-center items-center rounded-lg">
-          <FlutterIcon fill={`fill-flutter w-6 h-6`} />
+          <PrismaIcon fill={`fill-[#000000] w-6 h-6`} />
         </div>
       </Tooltip>
-      <Tooltip label="HI">
+      <Tooltip label="Vite">
         <div className="w-16 h-16 shadow-lg bg-slate-50 flex justify-center items-center rounded-lg">
-          <FlutterIcon fill={`fill-flutter w-6 h-6`} />
+          <ViteIcon fill={`fill-[#646CFF] w-6 h-6`} />
         </div>
       </Tooltip>
-      <Tooltip label="HI">
+      <Tooltip label="TailwindCSS">
         <div className="w-16 h-16 shadow-lg bg-slate-50 flex justify-center items-center rounded-lg">
-          <FlutterIcon fill={`fill-flutter w-6 h-6`} />
-        </div>
-      </Tooltip>
-      <Tooltip label="HI">
-        <div className="w-16 h-16 shadow-lg bg-slate-50 flex justify-center items-center rounded-lg">
-          <FlutterIcon fill={`fill-flutter w-6 h-6`} />
+          <TailwindIcon fill={`fill-[#06B6D4] w-6 h-6`} />
         </div>
       </Tooltip>
     </div>
   );
 }
 
-export default StackTooltip;
+export default FrontStack;
