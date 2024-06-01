@@ -13,7 +13,7 @@ function Navbar() {
   });
   return (
     <motion.div
-      className="fixed w-full h-16 bg-green-500 z-10"
+      className="fixed w-full h-16 z-10"
       initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{
@@ -24,7 +24,7 @@ function Navbar() {
     >
       <motion.div
         style={{ scaleX }}
-        className=" bg-red-500 h-1 w-full origin-top-left"
+        className=" bg-sky-300 h-1 w-full origin-top-left"
       />
       <div className=" flex justify-between h-full items-center px-6">
         <div>김태수 포트폴리오</div>

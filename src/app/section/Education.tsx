@@ -2,8 +2,7 @@ import React from 'react'
 
 function Education() {
     return (
-        <div className="flex min-h-[100vh] flex-col gap-20">
-            <div className="text-4xl text-main font-bold">Education</div>
+        <div className="flex min-h-[130vh] flex-col gap-20">
             <div className="space-y-1">
                 <div className="flex flex-grow-[1] justify-start items-start gap-10">
                     {/* 막대기 */}
@@ -52,7 +51,7 @@ function Education() {
                         <div className="text-main text-4xl font-medium">
                             Drew University, NJ
                         </div>
-                        <div className="text-sub">Physics, College of Liberal Arts </div>
+                        <div className="text-des">Physics, College of Liberal Arts </div>
                     </div>
                 </div>
             </div>
