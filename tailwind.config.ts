@@ -16,6 +16,7 @@ const config: Config = {
       colors: {
         main: "#191f28",
         sub: "#4e5968",
+        des: '#888888'
       },
     },
   },
