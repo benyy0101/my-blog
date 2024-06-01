@@ -14,7 +14,7 @@ import ReduxIcon from "../images/reduxIcon";
 
 function FrontStack() {
   return (
-    <div className="flex gap-4 px-4">
+    <div className="flex gap-4">
       <Tooltip label="Javascript">
         <div className="min-w-16 min-h-16 shadow-lg bg-slate-50 flex justify-center items-center rounded-lg">
           <JavaScriptIcon fill={`fill-[#F7DF1E] w-6 h-6`} />

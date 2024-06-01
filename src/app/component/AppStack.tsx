@@ -3,6 +3,7 @@ import React from "react";
 import FlutterIcon from "../images/flutterIcon";
 import GetxIcon from "../images/getxIcon";
 import TensorFlowIcon from "../images/tensorflowIcon";
+import KotlinIcon from "../images/kotlinIcon";
 
 function AppStack() {
   return (
@@ -12,17 +13,23 @@ function AppStack() {
           <FlutterIcon fill={`fill-[#02569B] w-6 h-6`} />
         </div>
       </Tooltip>
+
+      <Tooltip label="Kotlin">
+        <div className="w-16 h-16 shadow-lg bg-slate-50 flex justify-center items-center rounded-lg">
+          <KotlinIcon fill={`fill-[#7F52FF] w-6 h-6`} />
+        </div>
+      </Tooltip>
       <Tooltip label="GetX">
         <div className="w-16 h-16 shadow-lg bg-slate-50 flex justify-center items-center rounded-lg">
           <GetxIcon fill={`fill-[#8A2BE2] w-6 h-6`} />
         </div>
       </Tooltip>
 
-      <Tooltip label="Tensorflow">
+      {/* <Tooltip label="Tensorflow">
         <div className="w-16 h-16 shadow-lg bg-slate-50 flex justify-center items-center rounded-lg">
           <TensorFlowIcon fill={`fill-[#FF6F00] w-6 h-6`} />
         </div>
-      </Tooltip>
+      </Tooltip> */}
     </div>
   );
 }
