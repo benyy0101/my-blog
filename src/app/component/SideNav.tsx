@@ -1,42 +1,78 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 function SideNav() {
-    const stacksRef = useRef(null);
-    const educationRef = useRef(null);
-    const projectsRef = useRef(null);
-    const [activeSection, setActiveSection] = useState('');
+  const [activeSection, setActiveSection] = useState("");
 
-    useEffect(() => {
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.5,
-        };
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5,
+    };
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting && typeof entry.target.id == 'string')  {
-                    setActiveSection(entry.target.id);
-                }
-            });
-        }, observerOptions);
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting && typeof entry.target.id === "string") {
+          setActiveSection(entry.target.id);
+        }
+      });
+    }, observerOptions);
 
-        observer.observe(stacksRef.current);
-        observer.observe(educationRef.current);
-        observer.observe(projectsRef.current);
+    const stacksSection = document.getElementById("stacks");
+    const educationSection = document.getElementById("education");
+    const projectsSection = document.getElementById("projects");
 
-        return () => {
-            observer.disconnect();
-        };
-    }, []);
+    if (stacksSection) observer.observe(stacksSection);
+    if (educationSection) observer.observe(educationSection);
+    if (projectsSection) observer.observe(projectsSection);
 
-    return (
-        <div className="sticky top-20 flex flex-col h-screen text-6xl font-black items-start gap-4 z-30">
-            <button className={activeSection === 'stacks' ? 'text-main' : 'text-gray-500'} onClick={() => scrollToSection('stacks')} ref={stacksRef}>Stacks</button>
-            <button className={activeSection === 'education' ? 'text-main' : 'text-gray-500'} onClick={() => scrollToSection('education')} ref={educationRef}>Education</button>
-            <button className={activeSection === 'projects' ? 'text-main' : 'text-gray-500'} onClick={() => scrollToSection('projects')} ref={projectsRef}>Projects</button>
-        </div>
-    );
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      const yOffset = -100;
+      const y =
+        section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  };
+
+  const buttonVariants = {
+    active: {
+      color: "#000",
+      scale: 1.1,
+    },
+    inactive: {
+      color: "#6b7280",
+      scale: 1,
+    },
+  };
+
+  return (
+    <div className="sticky top-20 flex flex-col h-screen text-6xl font-black items-start gap-4 z-30">
+      <AnimatePresence>
+        {["stacks", "education", "projects"].map((section) => (
+          <motion.button
+            key={section}
+            className="text-gray-500"
+            onClick={() => scrollToSection(section)}
+            initial="inactive"
+            animate={activeSection === section ? "active" : "inactive"}
+            variants={buttonVariants}
+            transition={{ duration: 0.3 }}
+          >
+            {section.charAt(0).toUpperCase() + section.slice(1)}
+          </motion.button>
+        ))}
+      </AnimatePresence>
+    </div>
+  );
 }
 
 export default SideNav;
