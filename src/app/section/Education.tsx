@@ -2,7 +2,7 @@ import React from 'react'
 
 function Education() {
     return (
-        <div className="flex min-h-[130vh] flex-col gap-20">
+        <section id="education" className="flex min-h-[130vh] flex-col gap-20">
             <div className="space-y-1">
                 <div className="flex flex-grow-[1] justify-start items-start gap-10">
                     {/* 막대기 */}
@@ -56,7 +56,7 @@ function Education() {
                 </div>
             </div>
 						
-        </div>
+        </section>
     );
 }
 

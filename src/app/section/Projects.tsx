@@ -7,33 +7,33 @@ function Projects() {
     const projects = [
         {
             title: "Comeet",
-            description: "A social networking platform for professionals.",
-            imageUrl: "comeet.jpg"
+            description: "모각코 모집, 모임, 운영을 한 플랫폼에서!",
+            imageUrl: "/assets/images/comeet_main.png"
         },
         {
             title: "Andy",
             description: "A task management app with AI features.",
-            imageUrl: "andy.jpg"
+            imageUrl: ""
         },
         {
             title: "Wadada",
             description: "A task management app with AI features.",
-            imageUrl: "andy.jpg"
+            imageUrl: ""
         },
         {
             title: "Portfolio",
             description: "A task management app with AI features.",
-            imageUrl: "andy.jpg"
+            imageUrl: ""
         },
         {
             title: "EnjoyTrip",
             description: "A task management app with AI features.",
-            imageUrl: "andy.jpg"
+            imageUrl: ""
         },
         {
             title: "AIfred",
             description: "A task management app with AI features.",
-            imageUrl: "andy.jpg"
+            imageUrl: ""
         },
 
     ];
@@ -44,11 +44,11 @@ function Projects() {
 
     useEffect(() => {
         let controls;
-        let finalPosition = -width / 2 - 8;
+        let finalPosition = -width / 4 - 8;
 
         controls = animate(xTranslation, [0, finalPosition], {
             ease: "linear",
-            duration: 10,
+            duration: 80,
             repeat: Infinity,
             repeatType: "loop",
             repeatDelay: 0,
@@ -58,13 +58,13 @@ function Projects() {
     }, [xTranslation, width]);
 
     return (
-        <div className="z-10">
+        <section id="projects" className="z-10">
             <motion.div
                 className="flex gap-8"
                 ref={ref}
                 style={{ x: xTranslation }}
             >
-                {[...projects,...projects].map((project, index) => (
+                {[...projects,...projects,...projects,...projects].map((project, index) => (
                     <ProjectCard
                         key={index}
                         title={project.title}
@@ -73,7 +73,7 @@ function Projects() {
                     />
                 ))}
             </motion.div>
-        </div>
+        </section>
     );
 }
 

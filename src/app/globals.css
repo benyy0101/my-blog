@@ -45,3 +45,9 @@ a{
   max-width: 1366px;
  } 
 }
+
+.text-outline {
+  -webkit-text-stroke: 1px white; /* Safari, Chrome, Opera */
+  text-stroke: 1px white; /* Firefox */
+  color: black; /* 텍스트 색상 */
+}

@@ -6,7 +6,7 @@ import ToolStack from '../component/ToolStack'
 
 function Stack() {
   return (
-    <div className="flex flex-col gap-6 min-h-[150vh]">
+    <section id="stacks" className="flex flex-col gap-6 min-h-[150vh]">
 						<div className="font-bold text-4xl text-main">Frontend</div>
 						<FrontStack />
 						<div className="text-sub">
@@ -31,7 +31,7 @@ function Stack() {
 							Git Flow를 사용하여 버전관리를 하고, Jira 티켓을 통해 프로젝트를
 							관리합니다.
 						</div>
-					</div>
+					</section>
   )
 }
 
