@@ -1,10 +1,10 @@
 import React from "react";
 import { IconProps } from "../model/commons";
 
-function NodedotjsIcon({ fill }: IconProps): React.JSX.Element {
+function NodedotjsIcon(): React.JSX.Element {
   return (
     <svg
-      className={fill}
+      className="fill-[#5FA04E] w-6 h-6"
       role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"

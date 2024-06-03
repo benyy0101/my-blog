@@ -1,10 +1,10 @@
 import React from "react";
 import { IconProps } from "../model/commons";
 
-function TailwindIcon({ fill }: IconProps): React.JSX.Element {
+function TailwindIcon(): React.JSX.Element {
   return (
     <svg
-      className={fill}
+      className='fill-[#06B6D4] w-6 h-6' 
       role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"

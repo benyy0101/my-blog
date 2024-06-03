@@ -1,10 +1,10 @@
 import React from "react";
-import { IconProps } from "./../model/commons";
+import { IconProps } from "../model/commons";
 
-function GetxIcon({ fill }: IconProps) {
+function GetxIcon() {
   return (
     <svg
-      className={fill}
+      className="fill-[#8A2BE2] w-6 h-6"
       role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"

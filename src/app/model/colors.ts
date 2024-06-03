@@ -22,8 +22,9 @@ enum IconColor {
     Git='#F05032',
     Github = '#181717',
     Figma='#F24E1E',
-    Jira='##0052CC'
+    Jira='#0052CC',
 
+    Kotlin = '#7F52FF'
 };
 
 export default IconColor;

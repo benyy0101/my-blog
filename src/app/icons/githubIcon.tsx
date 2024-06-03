@@ -1,10 +1,10 @@
 import React from "react";
 import { IconProps } from "../model/commons";
 
-function GithubIcon({ fill }: IconProps): React.JSX.Element {
+function GithubIcon(): React.JSX.Element {
   return (
     <svg
-      className={fill}
+      className="#181717 w-6 h-6"
       role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"

@@ -1,10 +1,10 @@
 import React from "react";
 import { IconProps } from "../model/commons";
 
-function TensorFlowIcon({ fill }: IconProps): React.JSX.Element {
+function TensorFlowIcon(): React.JSX.Element {
   return (
     <svg
-      className={fill}
+      className="fill-[#FF6F00] h-6 w-6"
       role="img"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"

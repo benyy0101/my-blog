@@ -27,7 +27,7 @@ function Navbar() {
         className=" bg-sky-300 h-1 w-full origin-top-left"
       />
       <div className=" flex justify-between h-full items-center px-6">
-        <div>김태수 포트폴리오</div>
+        <div>TaesooKim.dev</div>
         <div className="flex gap-4">
           <Tooltip>
           <button>github</button>

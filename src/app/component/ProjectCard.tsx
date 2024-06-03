@@ -1,7 +1,28 @@
 import React from "react";
 import Image from "next/image";
-import ReactIcon from "../images/reactIcon";
-import ReduxIcon from "../images/reduxIcon";
+import ReactIcon from "../icons/reactIcon";
+import ReduxIcon from "../icons/reduxIcon";
+import GithubIcon from '../icons/githubIcon';
+import ReactqueryIcon from '../icons/reactqueryIcon';
+import FlutterIcon from "../icons/flutterIcon";
+import TailwindIcon from '../icons/tailwindIcon';
+import TypescriptIcon from '../icons/typescriptIcon';
+import ViteIcon from '../icons/viteIcon';
+import SpringbootIcon from '../icons/springbootIcon';
+import MysqlIcon from '../icons/mysqlIcon';
+import NodedotjsIcon from '../icons/nodedotjsIcon';
+import NextdotjsIcon from '../icons/nextdotjsIcon';
+import FigmaIcon from '../icons/figmaIcon';
+import GetxIcon from "../icons/getxIcon";
+import PrismaIcon from '../icons/prismaIcon';
+import JavaScriptIcon from '../icons/javasriptIcon';
+import MongoIcon from '../icons/mongoIcon';
+import TensorFlowIcon from '../icons/tensorflowIcon';
+import JiraIcon from '../icons/jiraIcon';
+import PwaIcon from '../icons/pwaIcon';
+import VueIcon from "../icons/vueIcon";
+import FramerIcon from './../icons/framerIcon';
+import KotlinIcon from './../icons/kotlinIcon';
 
 interface ProjectCardProps {
   title: string;
@@ -13,9 +34,30 @@ interface ProjectCardProps {
   homeUrl: string;
 }
 
-const IconsMap: Record<string, React.ComponentType> = {
+const IconsMap: Record<string, React.ComponentType<{ className?: string }>> = {
   ReactIcon,
   ReduxIcon,
+  FlutterIcon,
+  GithubIcon,
+  ReactqueryIcon,
+  TailwindIcon,
+  TypescriptIcon,
+  ViteIcon,
+  SpringbootIcon,
+  MysqlIcon,
+  NodedotjsIcon,
+  NextdotjsIcon,
+  FigmaIcon,
+  GetxIcon,
+  PrismaIcon,
+  JavaScriptIcon,
+  MongoIcon,
+  TensorFlowIcon,
+  JiraIcon,
+  PwaIcon,
+  VueIcon,
+  FramerIcon,
+  KotlinIcon
 };
 
 function ProjectCard({
@@ -29,7 +71,7 @@ function ProjectCard({
 }: ProjectCardProps) {
   return (
     <div className="h-[600px] w-[400px] bg-slate-50 rounded-2xl overflow-hidden">
-      <div className="relative h-[250px] w-full">
+      <div className="relative h-[300px] w-full">
         <Image
           src={imageUrl}
           alt="이미이미지"
@@ -38,29 +80,29 @@ function ProjectCard({
           className="rounded-t-2xl"
         />
       </div>
-      <div className="flex flex-col justify-between">
-        <div className="p-8 space-y-4">
-          <div className="text-2xl font-bold mb-2">{title}</div>
+      <div className="flex flex-col h-[300px] justify-between p-8 ">
+        <div className="space-y-6">
+          <div className="text-4xl font-bold mb-2">{title}</div>
           <p className="text-des">{description}</p>
-          <div className="flex space-x-2">
+          <div className="flex space-x-4">
             {stacks.map((item) => {
               const IconComponent = IconsMap[item];
               return IconComponent ? (
-                <IconComponent key={item} fill="w-6 h-6" />
+                <IconComponent key={item}/>
               ) : null;
             })}
           </div>
         </div>
-        <div className="p-8 space-y-4">
-          <a href={githubUrl} className="text-blue-500">
-            GitHub
+        <div className="space-x-4">
+          <a href={githubUrl} className="w-6 h-6 hover:w-8 hover:h-8">
+            <GithubIcon/>
           </a>
-          <a href={notionUrl} className="text-blue-500">
+          {/* <a href={notionUrl} className="text-blue-500">
             Notion
           </a>
           <a href={homeUrl} className="text-blue-500">
             Home
-          </a>
+          </a> */}
         </div>
       </div>
     </div>
