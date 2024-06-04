@@ -44,7 +44,7 @@ function Home() {
       {/* 1.5번째 페이지: 프로필 */}
 
       {/* 두번째 페이지: 스택 */}
-      <section className="flex relative flex-grow-[1] h-[400vh] min-w-[100vw] gap-20 p-20">
+      <section className="flex relative flex-grow-[1] h-[800vh] min-w-[100vw] gap-20 p-20">
         {/* navBar */}
         <SideNav />
 
@@ -52,6 +52,7 @@ function Home() {
           <Stack />
           <Education />
           <Projects />
+          
           {/* 세번째 페이지: 프로젝트 */}
         </div>
       </section>

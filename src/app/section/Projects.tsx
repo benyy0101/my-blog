@@ -14,7 +14,7 @@ function Projects() {
       stacks: ['ReactIcon','TailwindIcon','ReduxIcon','TypescriptIcon'],
       githubUrl: "",
       notionUrl: "",
-      homeUrl: "",
+      homeUrl: "/comeet",
     },
     {
       title: "앤디",
@@ -23,7 +23,7 @@ function Projects() {
       stacks: ['NextdotjsIcon','TailwindIcon','TypescriptIcon','ReactqueryIcon','PwaIcon','FramerIcon'],
       githubUrl: "",
       notionUrl: "",
-      homeUrl: "",
+      homeUrl: "/andy",
     },
     {
       title: "와다다",
@@ -32,7 +32,7 @@ function Projects() {
       stacks: ['FlutterIcon','GetxIcon','KotlinIcon'],
       githubUrl: "",
       notionUrl: "",
-      homeUrl: "",
+      homeUrl: "/wadada",
     },
     {
       title: "포트폴리오",
@@ -41,7 +41,7 @@ function Projects() {
       imageUrl: "",
       githubUrl: "",
       notionUrl: "",
-      homeUrl: "",
+      homeUrl: "/portfolio",
     },
     {
       title: "EnjoyTrip",
@@ -50,7 +50,7 @@ function Projects() {
       stacks: ['SpringbootIcon','VueIcon','MysqlIcon'],
       githubUrl: "",
       notionUrl: "",
-      homeUrl: "",
+      homeUrl: "/enjoy_trip",
     },
     {
       title: "AIfred",
@@ -59,7 +59,7 @@ function Projects() {
       stacks: ['NextdotjsIcon','TypescriptIcon','PrismaIcon','MongoIcon'],
       githubUrl: "",
       notionUrl: "",
-      homeUrl: "",
+      homeUrl: "/aifred",
     },
   ];
 
