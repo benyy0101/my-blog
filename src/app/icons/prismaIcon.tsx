@@ -1,5 +1,4 @@
 import React from "react";
-import { IconProps } from "../model/commons";
 
 function PrismaIcon(): React.JSX.Element {
   return (

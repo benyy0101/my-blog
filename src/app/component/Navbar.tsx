@@ -1,3 +1,5 @@
+/* eslint-disable react/button-has-type */
+
 "use client";
 
 import { motion, useScroll, useSpring } from "framer-motion";
@@ -30,7 +32,7 @@ function Navbar() {
         <div>TaesooKim.dev</div>
         <div className="flex gap-4">
           <Tooltip>
-          <button>github</button>
+          <button >github</button>
           </Tooltip>
           
           <button>velog</button>

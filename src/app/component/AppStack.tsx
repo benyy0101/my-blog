@@ -2,7 +2,6 @@ import { Tooltip } from "@chakra-ui/react";
 import React from "react";
 import FlutterIcon from "../icons/flutterIcon";
 import GetxIcon from "../icons/getxIcon";
-import TensorFlowIcon from "../icons/tensorflowIcon";
 import KotlinIcon from "../icons/kotlinIcon";
 import PwaIcon from "../icons/pwaIcon";
 

@@ -1,5 +1,4 @@
 import React from "react";
-import { IconProps } from "../model/commons";
 
 function GithubIcon(): React.JSX.Element {
   return (

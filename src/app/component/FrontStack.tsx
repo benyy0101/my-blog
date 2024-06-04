@@ -1,8 +1,6 @@
-import { Tooltip, Progress } from "@chakra-ui/react";
+import { Tooltip } from "@chakra-ui/react";
 import React from "react";
-import FlutterIcon from "../icons/flutterIcon";
 import JavaScriptIcon from "../icons/javasriptIcon";
-import IconColor from "../model/colors";
 import ReactIcon from "../icons/reactIcon";
 import TypescriptIcon from "../icons/typescriptIcon";
 import ReactqueryIcon from "../icons/reactqueryIcon";

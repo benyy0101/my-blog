@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unused-prop-types */
 import React from "react";
 import Image from "next/image";
 import ReactIcon from "../icons/reactIcon";
@@ -21,8 +22,8 @@ import TensorFlowIcon from '../icons/tensorflowIcon';
 import JiraIcon from '../icons/jiraIcon';
 import PwaIcon from '../icons/pwaIcon';
 import VueIcon from "../icons/vueIcon";
-import FramerIcon from './../icons/framerIcon';
-import KotlinIcon from './../icons/kotlinIcon';
+import FramerIcon from "../icons/framerIcon";
+import KotlinIcon from "../icons/kotlinIcon";
 
 interface ProjectCardProps {
   title: string;
@@ -65,9 +66,7 @@ function ProjectCard({
   description,
   imageUrl,
   stacks,
-  githubUrl,
-  notionUrl,
-  homeUrl,
+  githubUrl
 }: ProjectCardProps) {
   return (
     <div className="h-[600px] w-[400px] bg-slate-50 rounded-2xl overflow-hidden">
