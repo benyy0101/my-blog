@@ -14,7 +14,6 @@ function Intro() {
             "꾸준한 몰입력으로", // Deletes 'One' and types 'Two'
             1000, // Waits 2s
             () => {
-              console.log("Sequence completed");
             },
           ]}
           wrapper="span"

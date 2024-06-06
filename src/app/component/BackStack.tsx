@@ -1,6 +1,5 @@
 import { Tooltip } from "@chakra-ui/react";
 import React from "react";
-import JavaScriptIcon from "../icons/javasriptIcon";
 import SpringbootIcon from "../icons/springbootIcon";
 import NodedotjsIcon from "../icons/nodedotjsIcon";
 import MysqlIcon from "../icons/mysqlIcon";

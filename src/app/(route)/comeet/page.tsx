@@ -11,9 +11,6 @@ function Page() {
           <div className="text-main font-black text-4xl">
             스터디 운영 & 모임 & 관리를 더 쉽게, 코밋
         </div>
-        <div>
-          
-        </div>
         </div>
     </div>
   );
