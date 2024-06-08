@@ -6,10 +6,6 @@ import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
 import Navbar from "@/app/component/Navbar";
-import ReactIcon from "../../icons/reactIcon";
-import ReduxIcon from "../../icons/reduxIcon";
-import OpenViduIcon from "../../icons/openViduIcon";
-import ReactqueryIcon from "../../icons/reactqueryIcon";
 
 function Page() {
   const markdownText = `# 🌠 개발자들을 위한 모각코 커뮤니티 사이트 COMEET
