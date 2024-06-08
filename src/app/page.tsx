@@ -3,8 +3,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
-import Intro from "./component/Intro";
+import { AnimatePresence } from "framer-motion";
+import Intro from "./section/Intro";
 import Navbar from "./component/Navbar";
 import Education from "./section/Education";
 import Stack from "./section/Stack";
@@ -27,6 +27,7 @@ function Home() {
 
     setTimeout(() => {
       setIsLoading(false);
+      window.scrollTo(0, 0);
     }, 2000);
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -42,14 +43,7 @@ function Home() {
         {isLoading && <Preloader />}
       </AnimatePresence>
 
-      <div className="flex h-[100vh]">
-        <div className="h-full flex-grow-[1] flex flex-col justify-center items-end w-full">
-          <Intro />
-        </div>
-        <div className="h-full flex-grow-[1] flex justify-start items-center w-full">
-          temptemptemp
-        </div>
-      </div>
+      <Intro />
 
       {/* 1.5번째 페이지: 프로필 */}
 
