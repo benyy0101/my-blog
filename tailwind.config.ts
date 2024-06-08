@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -18,8 +19,13 @@ const config: Config = {
         sub: "#4e5968",
         des: '#888888'
       },
+      fontFamily: {
+        pretendard: ['var(--font-pretendard)'],
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 };
 export default config;

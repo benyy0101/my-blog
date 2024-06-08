@@ -51,3 +51,12 @@ a{
   text-stroke: 1px white; /* Firefox */
   color: black; /* 텍스트 색상 */
 }
+
+code {
+	padding: 3px 6px;
+  	border: none;
+  	border-radius: 3px;
+	background-color: #e9ecef;
+	font-size: 1.6rem;
+	font-family: "Pretendard", "Malgun Gothic", sans-serif;
+}
