@@ -8,6 +8,7 @@ import {
   PresentationChartBarIcon,
 } from "@heroicons/react/24/outline";
 import { HomeIcon } from "@heroicons/react/24/outline";
+import Image from "next/image";
 import GithubIcon from "../icons/githubIcon";
 
 function Intro() {
@@ -70,8 +71,16 @@ function Intro() {
         </div>
       </div>
       {/* right section */}
-      <div className="h-full flex-grow-[1] flex justify-start items-center w-full">
-        사진이 준비중에 있습니다!
+      <div className="h-full flex-grow-[1] flex justify-center items-center w-full flex-col">
+        <div className="flex flex-col justify-center items-center">
+          <Image
+            src="/assets/images/icon.png"
+            alt="icon"
+            width={300}
+            height={300}
+          />
+          <div>사진이 준비중에 있습니다!</div>
+        </div>
       </div>
     </div>
   );

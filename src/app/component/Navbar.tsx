@@ -4,7 +4,6 @@
 
 import { motion, useScroll, useSpring } from "framer-motion";
 import React from "react";
-import { Tooltip } from '@chakra-ui/react';
 
 function Navbar() {
   const { scrollYProgress } = useScroll();
@@ -31,15 +30,11 @@ function Navbar() {
       <div className=" flex justify-between h-full items-center px-6">
         <div>TaesooKim.dev</div>
         <div className="flex gap-4">
-          <Tooltip>
-          <button >github</button>
-          </Tooltip>
-          
-          <button>velog</button>
+          <a href="https://github.com/benyy0101">github</a>
+          <a href="https://velog.io/@kts9534/posts">github</a>
           <button>email</button>
         </div>
       </div>
-      
     </motion.div>
   );
 }
