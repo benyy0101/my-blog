@@ -1,7 +1,6 @@
 "use client";
 
 import { Tooltip } from "@chakra-ui/react";
-import { PresentationChartBarIcon } from "@heroicons/react/24/outline";
 import React from "react";
 
 function Page() {
