@@ -55,34 +55,34 @@ function SideNav() {
   };
 
   const textOutlineStyle = {
-		textShadow: `
-      -0.5px -0.5px 0 #fff,  
-      0.5px -0.5px 0 #fff,
-      -0.5px 0.5px 0 #fff,
-      0.5px 0.5px 0 #fff
+    textShadow: `
+      -1px -1px 0 #fff,  
+      1px -1px 0 #fff,
+      -1px 1px 0 #fff,
+      1px 1px 0 #fff
     `,
-	};
+  };
 
-	return (
-		<div className="sticky top-20 flex flex-col h-screen text-6xl font-black items-start gap-4 z-30">
-			<AnimatePresence>
-				{["stacks", "education", "projects"].map((section) => (
-					<motion.button
-						key={section}
-						className="text-gray-500"
-						onClick={() => scrollToSection(section)}
-						initial="inactive"
-						animate={activeSection === section ? "active" : "inactive"}
-						variants={buttonVariants}
-						transition={{ duration: 0.3 }}
-						style={textOutlineStyle}
-					>
-						{section.charAt(0).toUpperCase() + section.slice(1)}
-					</motion.button>
-				))}
-			</AnimatePresence>
-		</div>
-	);
+  return (
+    <div className="sticky top-20 flex flex-col h-screen text-6xl font-black items-start gap-4 z-30">
+      <AnimatePresence>
+        {["stacks", "education", "projects"].map((section) => (
+          <motion.button
+            key={section}
+            className="text-gray-500"
+            onClick={() => scrollToSection(section)}
+            initial="inactive"
+            animate={activeSection === section ? "active" : "inactive"}
+            variants={buttonVariants}
+            transition={{ duration: 0.3 }}
+            style={textOutlineStyle}
+          >
+            {section.charAt(0).toUpperCase() + section.slice(1)}
+          </motion.button>
+        ))}
+      </AnimatePresence>
+    </div>
+  );
 }
 
 export default SideNav;

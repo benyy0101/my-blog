@@ -25,12 +25,6 @@ a{
   text-decoration: none;
 }
 
-.root-container{
-  min-height: 1000vh;
-  background-color: var(--bg);
-  color: var(--textColor);
-}
-
 .root-wrapper{
   max-width: 1536px;
   margin-left: auto;
