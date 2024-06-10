@@ -57,7 +57,7 @@ function Projects() {
       stacks: ["SpringbootIcon", "VueIcon", "MysqlIcon"],
       githubUrl: "",
       notionUrl: "",
-      homeUrl: "/enjoy_trip",
+      homeUrl: "/enjoytrip",
     },
     {
       title: "AIfred",
